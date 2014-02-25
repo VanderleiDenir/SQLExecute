@@ -1,0 +1,29 @@
+﻿<Window x:Name="Window" x:Class="ScriptRunner2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SQL Execute" Height="624.784" Width="688.948" Loaded="Window_Loaded" Closing="Window_Closing"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}">
+
+   <Grid Margin="0,0,2,0">
+      <Label Content="Tempo Total:" HorizontalAlignment="Left" Margin="187,373,0,0" VerticalAlignment="Top"/>
+      <Label Content="Tempo do Script:" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top"/>
+      <Label x:Name="lblTime" Content="00:00:00" HorizontalAlignment="Left" Margin="115,373,0,0" VerticalAlignment="Top"/>
+      <Label x:Name="lblTotalTime" Content="00:00:00" HorizontalAlignment="Left" Margin="271,373,0,0" VerticalAlignment="Top"/>
+      <ListBox x:Name="messagesListBox" Margin="10,399,10,10" RenderTransformOrigin="-1.834,0.198"/>
+      <ListBox x:Name="lstDragDrop" ItemsSource="{Binding CheckList}" Margin="10,41,13,0" Height="327" VerticalAlignment="Top" MouseDoubleClick="lstDragDrop_MouseDoubleClick">
+         <ListBox.ItemTemplate>
+            <DataTemplate>
+               <StackPanel>
+                  <CheckBox Content="{Binding Content}" IsChecked="{Binding IsChecked }" IsEnabled="{Binding IsEnabled }" Foreground="{Binding Foreground}" ></CheckBox>
+               </StackPanel>
+            </DataTemplate>
+         </ListBox.ItemTemplate>
+      </ListBox>
+      <TextBox x:Name="txtDirPath" HorizontalAlignment="Left" Height="26" Margin="108,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="462" />
+      <Button x:Name="btnRunScript" Content="Iniciar" HorizontalAlignment="Left" Margin="411,374,0,0" VerticalAlignment="Top" Width="75" Click="btnRunScript_Click"/>
+      <Button x:Name="optionsButton" Content="Opções" HorizontalAlignment="Left" Margin="579,374,0,0" VerticalAlignment="Top" Width="75" Click="optionsButton_Click"/>
+      <Button x:Name="btnClear" Content="Limpar" HorizontalAlignment="Left" Margin="495,374,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click"/>
+      <Label Content="Diretorio Inicial:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+      <Button x:Name="btBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="579,16,0,0" VerticalAlignment="Top" Width="75" Click="btBuscar_Click"/>
+   </Grid>
+</Window>
