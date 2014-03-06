@@ -8,7 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Markup;
 
-namespace ScriptRunner2
+namespace SQLExecute
 {
     public partial class Options : Window, IComponentConnector
     {

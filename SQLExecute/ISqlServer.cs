@@ -1,7 +1,7 @@
 ﻿using Microsoft.SqlServer.Management.Common;
 using System.Data.SqlClient;
 
-namespace ScriptRunner
+namespace SQLExecute
 {
     public interface ISqlServer
     {

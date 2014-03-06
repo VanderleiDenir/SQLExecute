@@ -3,7 +3,7 @@ using Microsoft.SqlServer.Management.Smo;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace ScriptRunner
+namespace SQLExecute
 {
    public class SqlServer : ISqlServer
    {

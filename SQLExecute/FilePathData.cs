@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ScriptRunner
+namespace SQLExecute
 {
     public class FilePathData
     {

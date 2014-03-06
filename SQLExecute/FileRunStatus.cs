@@ -1,4 +1,4 @@
-﻿namespace ScriptRunner
+﻿namespace SQLExecute
 {
     public enum FileRunStatus
     {

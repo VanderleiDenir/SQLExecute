@@ -1,4 +1,4 @@
-﻿<Window x:Class="ScriptRunner2.Options"
+﻿<Window x:Class="SQLExecute.Options"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Conexão Banco de Dados" Height="304.511" Width="403.759" Loaded="options_Loaded" Initialized="options_Initialized" WindowStartupLocation="CenterOwner" Closing="Window_Closing_1">

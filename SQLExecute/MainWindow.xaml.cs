@@ -3,7 +3,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Markup;
 using System.Windows.Media;
-using ScriptRunner;
 using System.Collections.Generic;
 using System.IO;
 using System;
@@ -11,7 +10,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Collections;
 
-namespace ScriptRunner2
+namespace SQLExecute
 {
    public partial class MainWindow : Window, IComponentConnector, INotifyPropertyChanged
    {
@@ -519,6 +518,5 @@ namespace ScriptRunner2
          Process.Start("notepad.exe", txtDirPath.Text + @"\" + nome);
          chk.IsChecked = true;
       }
-
    }
 }

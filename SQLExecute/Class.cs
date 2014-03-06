@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ScriptRunner2
+namespace SQLExecute
 {
    public class Class : Control, INotifyPropertyChanged
    {

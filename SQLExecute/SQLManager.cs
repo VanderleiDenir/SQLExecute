@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Threading;
 
-namespace ScriptRunner
+namespace SQLExecute
 {
     public class SQLManager
     {
@@ -185,7 +185,7 @@ namespace ScriptRunner
                 this.server.PingServer();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 this.backgroundScriptWorker.ReportProgress(0, (object)new MessageToReturn()
                 {
